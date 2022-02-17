@@ -11,10 +11,10 @@ return [
             'class' => \Ece2\HyperfLogExt\GelfHandler::class,
             'constructor' => [
                 'config' => [
-                    'transport' => config('hyperf-log-ext.graylog_host', 'dup'),
-                    'host' => config('hyperf-log-ext.graylog_host', '127.0.0.1'),
-                    'port' => config('hyperf-log-ext.graylog_port', 12201),
-                    'path' => config('hyperf-log-ext.graylog_path'),
+                    'transport' => env('GRAYLOG_TRANSPORT_TYPE', 'udp'),
+                    'host' => env('GRAYLOG_HOST', '127.0.0.1'),
+                    'port' => env('GRAYLOG_PORT', 12201),
+                    'path' => env('GRAYLOG_PATH'),
                 ],
                 'level' => env('GRAYLOG_LOG_LEVEL', 'debug'),
                 'bubble' => true,
