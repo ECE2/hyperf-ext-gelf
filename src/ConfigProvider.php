@@ -4,13 +4,10 @@ declare(strict_types=1);
 
 /**
  * This file is part of hyperf-log-ext.
- *
- * @link     https://www.hyperf.io
- * @document https://doc.hyperf.io
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
  */
 namespace Ece2\HyperfLogExt;
+
+use Monolog\Formatter\GelfMessageFormatter;
 
 class ConfigProvider
 {
@@ -28,6 +25,14 @@ class ConfigProvider
                     ],
                 ],
             ],
+            'publish' => [
+                [
+                    'id' => 'logger.php',
+                    'description' => 'replace logger config',
+                    'source' => __DIR__ . '/../publish/logger.php',
+                    'destination' => BASE_PATH . '/config/autoload/logger.php',
+                ],
+            ]
         ];
     }
 }

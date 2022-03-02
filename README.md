@@ -1,6 +1,18 @@
 
 ## Hyperf 日志扩展
 
+安装
+
+```shell
+composer require ece2/hyperf-common
+```
+
+初始化
+
+```shell
+php bin/hyperf.php vendor:publish ece2/hyperf-common -f
+```
+
 ### 1. Graylog
     config/autoload/logger.php 参考
 
