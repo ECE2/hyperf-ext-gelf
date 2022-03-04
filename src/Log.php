@@ -27,9 +27,9 @@ class Log
     public static function __callStatic($logLevel, $arguments)
     {
         if ($logLevel === 'log') {
-            [$logLevel, $message, $context, $logName] = $arguments;
+            @[$logLevel, $message, $context, $logName] = $arguments;
         } else {
-            [$message, $context, $logName] = $arguments;
+            @[$message, $context, $logName] = $arguments;
         }
 
         static::get($logName ?? 'log')->{$logLevel}($message ?? '', $context ?? []);
