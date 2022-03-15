@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /**
- * This file is part of hyperf-log-ext.
+ * This file is part of log-ext.
  */
-namespace Ece2\HyperfLogExt;
+namespace Ece2\LogExt;
 
 use Monolog\Formatter\GelfMessageFormatter;
 

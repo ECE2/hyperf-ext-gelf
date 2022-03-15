@@ -1,5 +1,5 @@
 {
-    "name": "ece2/hyperf-log-ext",
+    "name": "ece2/log-ext",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -11,7 +11,7 @@
     "description": "Hyperf logger extend",
     "autoload": {
         "psr-4": {
-            "Ece2\\HyperfLogExt\\": "src/"
+            "Ece2\\LogExt\\": "src/"
         }
     },
     "autoload-dev": {
@@ -48,7 +48,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "Ece2\\HyperfLogExt\\ConfigProvider"
+            "config": "Ece2\\LogExt\\ConfigProvider"
         }
     }
 }

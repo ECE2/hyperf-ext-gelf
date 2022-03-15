@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Ece2\HyperfLogExt\GelfHandler;
+use Ece2\LogExt\GelfHandler;
 use Monolog\Formatter\GelfMessageFormatter;
 
 return [
