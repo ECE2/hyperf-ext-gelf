@@ -11,7 +11,7 @@
     "description": "Hyperf graylog logger extend",
     "autoload": {
         "psr-4": {
-            "Ece2\\LogExt\\": "src/"
+            "Ece2\\GelfExt\\": "src/"
         }
     },
     "autoload-dev": {
