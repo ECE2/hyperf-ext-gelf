@@ -1,6 +1,4 @@
-## Hyperf 日志扩展
-
-本项目和使用项目平级放置
+## Hyperf Graylog 日志扩展
 
 安装
 
