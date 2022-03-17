@@ -3,9 +3,9 @@
 declare(strict_types=1);
 
 /**
- * This file is part of log-ext.
+ * This file is part of gelf-ext.
  */
-namespace Ece2\LogExt;
+namespace Ece2\GelfExt;
 
 use Gelf\MessageInterface as Message;
 use Gelf\Transport\UdpTransport;

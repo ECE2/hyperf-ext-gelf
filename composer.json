@@ -1,5 +1,5 @@
 {
-    "name": "ece2/log-ext",
+    "name": "ece2/gelf-ext",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -8,7 +8,7 @@
         "graylog",
         "logger"
     ],
-    "description": "Hyperf logger extend",
+    "description": "Hyperf graylog logger extend",
     "autoload": {
         "psr-4": {
             "Ece2\\LogExt\\": "src/"
@@ -48,7 +48,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "Ece2\\LogExt\\ConfigProvider"
+            "config": "Ece2\\GelfExt\\ConfigProvider"
         }
     }
 }
