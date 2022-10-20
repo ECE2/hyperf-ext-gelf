@@ -1,5 +1,5 @@
 {
-    "name": "ece2/gelf-ext",
+    "name": "ece2/hyperf-ext-gelf",
     "type": "library",
     "license": "MIT",
     "keywords": [
